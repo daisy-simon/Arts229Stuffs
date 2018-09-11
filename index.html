@@ -6,22 +6,61 @@
   <style>
     body {
       background-image: url("images/fox-background.png");
-      color: #fcfcf4;
+      color: #000;
     }
+    ul {
+      background-color: white;
+      margin-left: 800px;
+      margin-right: 800px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      list-style-type: none;
+      text-align: center;
+    }
+div.transbox {
+  margin-left: 800px;
+  margin-right: 800px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox ul, a, h2 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  font-size: 16pt;
+  padding-right: 15px
+}
+
+h2 {
+  text-align: center;
+  font-size: 24pt;
+  color: #000000;
+  text-shadow: 1px 1px #000000;
+}
+
   </style>
 </head>
 
 <body>
   <p>Hello world! I'm Daisy and this is my ARTS 229 folder.</p>
 
+
+<div class=transbox>
   <h2>EXPERMIENTS</h2>
-  <ul>
+    <ul>
     <li><a href="text-experiment/text-experiment.html">text expermiment</a></li>
     <li><a href="#">asignment name</a></li>
     <li><a href="#">asignment name</a></li>
     <li><a href="#">asignment name</a></li>
   </ul>
+</div>
 
+
+<div class=transbox>
   <h2>EXPLORATIONS</h2>
   <ul>
     <li><a href="#">asignment name</a></li>
@@ -29,7 +68,10 @@
     <li><a href="#">asignment name</a></li>
     <li><a href="#">asignment name</a></li>
   </ul>
+</div>
 
+
+<div class=transbox>
   <h2>PROJECTS</h2>
   <ul>
     <li><a href="#">asignment name</a></li>
@@ -37,6 +79,7 @@
     <li><a href="#">asignment name</a></li>
     <li><a href="#">asignment name</a></li>
   </ul>
+</div>
 </body>
 
 </html>
