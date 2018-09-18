@@ -5,16 +5,80 @@
   <title>images experiment</title>
 
   <style>
-    body {background-image: url("images/fox-background.png");
-    background-repeat: repeat-x;
-    background-color: black;
+    body {}
+
+    h1 {
+      text-align: center;
+    }
+
+    #gradient {
+      background: linear-gradient(to bottom, #a57f87 0%, #8c4857 50%, #6b1225 100%);
+      height: 100px;
+      max-width: 30%;
+
+    }
+
+    #texture {
+      background-image: url("96462211.png");
+      height: 100px;
+      max-width: 40%;
+
+    }
+
+    #rgb {
+      background: linear-gradient(to right, #ff0000 0%, #0000ff 50%, #00ff00 100%);
+      height: 100px;
+      max-width: 50%;
+    }
+
+    #cmyk {
+      background: linear-gradient(to bottom, #ffff00 0%, #00ffff 50%, #ff00ff 100%);
+      background-repeat: repeat-x;
+      height: 100px;
+      max-width: 60%;
+    }
+
+    #stripe {
+      background-image: url("path-to-stripe.png");
+      background-repeat: repeat-x;
+      height: 100px;
+      max-width: 70%;
+    }
+
+    #noise {
+      background-image: url("noisy-texture.png");
+      background-repeat: repeat-x;
+      height: 100px;
+      max-width: 80%;
+    }
+
+    #stripe2 {
+      background-image: url("stripe-2.png");
+      background-repeat: repeat-x;
+      height: 100px;
+      max-width: 90%;
+    }
+
+    #floral {
+      background-image: url("floral.jpg");
+      background-repeat: repeat-x;
+      height: 100px;
+      max-width: 100%;
     }
   </style>
 
 </head>
 
 <body>
-  IMAGES
+  <h1>IMAGE EXPERIMENT. YAY.</h1>
+  <div id="gradient"></div>
+  <div id="texture"></div>
+  <div id="rgb"></div>
+  <div id="cmyk"></div>
+  <div id="stripe"></div>
+  <div id="noise"></div>
+  <div id="stripe2"></div>
+  <div id="floral"></div>
 </body>
 
 
