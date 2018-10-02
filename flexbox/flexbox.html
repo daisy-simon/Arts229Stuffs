@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>flexbox demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  section { background-color: #474546; display: flex; margin:50px;}
+
+  div {
+    background:#6b2737;
+    width: 100px;
+    height: 100px;
+  }
+
+  .flex-container1 {
+    padding: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .flex-container1 div {
+    flex-basis: auto;
+    flex-grow: 1;
+    border-radius: 10px;
+  }
+
+  .order1 {
+    order: -1; f
+    lex-grow: 3;
+  }
+
+  .flex-container2 {
+    padding: 50px;
+    flex-direction: row;
+    flew-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+  }
+
+  .flex-container2 div {
+    border-radius: 50%;
+    background: #cfcfea;
+  }
+
+  .order2 {
+    order: -1;
+
+  }
+
+  .flex-container5 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.article {
+  flex: 100%;
+  background: #ccc;
+  padding: 5em;
+  box-sizing:content-box;
+}
+
+.siderbar {
+  flex: 100%;
+  background: #aaa;
+  padding: 5em;
+  box-sizing: content-box;
+  margin-top: 1%;
+}
+
+.footer {
+  flex: 100%;
+  background: #888;
+  padding: 5em;
+  box-sizing: content-box;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+@media screen and (min-width: 1000px) {
+  .article {
+    flex: 69%;
+    margin-right: 1%;
+  }
+
+  .siderbar {
+    flex: 30%;
+    margin-top: 0;
+  }
+
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>flexbox experiments</h1>
+  </header>
+
+  <section class="flex-container1">
+    <div class=order1>This is box number 1</div>
+    <div>This is box number 2</div>
+    <div>This is box number 3</div>
+    <div>This is box number 4</div>
+    <div>This is box number 5</div>
+    <div>This is box number 6</div>
+    <div>This is box number 7</div>
+    <div>This is box number 8</div>
+  </section>
+
+  <section class="flex-container2">
+    <div class=order2>No. 1</div>
+    <div>No. 2</div>
+    <div>No. 3</div>
+    <div>No. 4</div>
+    <div>No. 5</div>
+    <div>No. 6</div>
+    <div>No. 7</div>
+    <div>No. 8</div>
+  </section>
+
+  <section class="flex-container3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container5">
+    <div class="article">
+      <h2>title of main article</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+    <div class="sidebar">
+      <h2>sidebar here</h2>
+      <p>Scoot butt on the rug prance along on top of the garden fence, annoy the neighbor's dog and make it bark.</p>
+    </div>
+    <div class="footer">
+      <h2>footer stuff here</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>
